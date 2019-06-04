@@ -1,0 +1,49 @@
+[
+    {
+        "faceAnnotations": [],
+        "labelAnnotations": [
+            {
+                "mid": "/m/03q69",
+                "description": "Hair",
+                "score": 0.980039,
+                "topicality": 0.980039
+            },
+            {
+                "mid": "/m/0dzct",
+                "description": "Face",
+                "score": 0.9794876,
+                "topicality": 0.9794876
+            },
+            {
+                "mid": "/m/0ds5b",
+                "description": "Facial hair",
+                "score": 0.96523327,
+                "topicality": 0.96523327
+            },
+            {
+                "mid": "/m/025kyy",
+                "description": "Forehead",
+                "score": 0.9611779,
+                "topicality": 0.9611779
+            },
+            {
+                "mid": "/m/0f9swq",
+                "description": "Chin",
+                "score": 0.9318514,
+                "topicality": 0.9318514
+            }
+        ],
+        "landmarkAnnotations": [],
+        "logoAnnotations": [],
+        "textAnnotations": [],
+        "localizedObjectAnnotations": [],
+        "safeSearchAnnotation": null,
+        "imagePropertiesAnnotation": null,
+        "error": null,
+        "cropHintsAnnotation": null,
+        "fullTextAnnotation": null,
+        "webDetection": null,
+        "productSearchResults": null,
+        "context": null
+    }
+]

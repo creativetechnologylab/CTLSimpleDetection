@@ -18,4 +18,11 @@ const likelihoodPercentage = key => {
     return LIKELIHOOD[key] / 5;
 };
 
-module.exports = { LIKELIHOOD, getJsonFromFile, likelihoodPercentage };
+const base64Encode = file => {
+    // read binary data
+    var bitmap = fs.readFileSync(file);
+    // convert binary data to base64 encoded string
+    return new Buffer(bitmap).toString('base64');
+}
+
+module.exports = { LIKELIHOOD, getJsonFromFile, likelihoodPercentage, base64Encode };

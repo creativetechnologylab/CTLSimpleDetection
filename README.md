@@ -12,13 +12,13 @@ The Google API is not free. It allows for 1000 uses per month and is $1.00 for e
 
 Copy the `CTLSimpleDetection` folder into your project and then you can require it by using `const CTLSimpleDetection = require('./CTLSimpleDetection/CTLSimpleDetection')` in your node.js code.
 
-You do however also need to install the cloud vision API into your project:
+You do however also need to install the axios module into your project:
 
 ```
-npm install @google-cloud/vision
+npm install axios
 ```
 
-You also need to download service account credentials JSON file for a google account. Look at this link <https://cloud.google.com/vision/docs/quickstart-client-libraries> and follow **Steps 1 - 4** in the **Before you begin section**
+You also need to get an API Key from Google Cloud to use the google vision API. <https://cloud.google.com/docs/authentication/api-keys#creating_an_api_key>
 
 ## API
 
@@ -26,15 +26,25 @@ You also need to download service account credentials JSON file for a google acc
 - *credentialsFileLocation* - An absolute path to the credentials.json acquired from your google cloud service account
 - *options* - An options object
 
+**options**
 
-**getFace(image)**
+| Key             | Value                                          | Default |
+|-----------------|------------------------------------------------|---------|
+| test            | Returns test information, not real             | false   |
+
+**addImage(image)**
 - *image* Link to image to detect
-- *@returns Promise(faceAnnotations)*
 
+**getFaces(maxResults)**
+- *maxResults* Sets the maximum possible faces to find
 
-**getFaceEmotions(image)**
-- *image* Link to image to detect
-- *@returns Promise(emotions)*
+**getLabels(maxResults)**
+- *maxResults* Sets the maximum possible labels to find
+
+**getText()**
+
+**run()**
+- *@returns Promise(annotations)* Runs the query to return results
 
 
 ## Example
